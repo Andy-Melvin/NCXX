@@ -1,0 +1,36 @@
+#Network Control Extension
+
+Monitor and control network activity with this Chrome extension. This README provides step-by-step instructions on loading the extension into Chrome, understanding its functionality, and optionally publishing it to the Chrome Web Store.
+
+#Table of Contents
+
+Loading the Extension into Chrome
+How It Works
+Publishing (Optional)
+Loading the Extension into Chrome
+
+Open Chrome.
+Navigate to chrome://extensions/.
+Enable Developer mode by toggling the switch located on the top right.
+Click the Load unpacked button.
+Browse and select the /NetworkControlExtension directory.
+
+#How It Works
+
+Once loaded, you'll find the extension's icon in the Chrome toolbar.
+Click the icon to access a popup (defined in popup.html), providing an interactive interface.
+As you surf the web, the background.js script keeps track of all network requests, logging them for reference. Access these logs by:
+Visiting chrome://extensions/.
+Locating your extension.
+Clicking the "background page" link.
+To block specific requests or fine-tune network activity, enhance the logic in background.js.
+Publishing (Optional)
+
+To make your extension available on the Chrome Web Store:
+
+Head to the Chrome Web Store Developer Dashboard.
+Click the Add a new item button.
+Compress your /NetworkControlExtension directory into a ZIP file and upload.
+Populate the necessary details such as description, screenshots, and so on.
+There's a one-time developer fee; ensure you've cleared it.
+Hit Publish to make your extension public!
